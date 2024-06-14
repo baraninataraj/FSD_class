@@ -1,0 +1,10 @@
+In JavaScript, objects are fundamental entities that represent collections of key-value pairs, 
+allowing for the organisation and manipulation of data. Understanding how objects are internally
+represented is crucial for mastering JavaScript development.
+Let's delve into the internal representation of objects in JavaScript:
+
+Properties and Methods:
+   - Objects in JavaScript consist of properties and methods.
+   - Properties are key-value pairs where the key is always a string (or symbol) and the value can be any data type.
+   - Methods are functions associated with an object, allowing for behaviour encapsulation.
+
