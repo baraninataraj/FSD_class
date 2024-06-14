@@ -1,0 +1,30 @@
+Multiplexing: One of the significant improvements in HTTP/2 is multiplexing, 
+ which allows multiple requests and responses to be sent and
+ received simultaneously over a single TCP connection. 
+ In HTTP/1.1, each request/response typically required a separate connection, 
+ leading to inefficiencies due to connection setup and teardown overhead.
+
+Header Compression: HTTP/2 introduces header compression using the HPACK algorithm,
+ which reduces overhead by compressing headers before sending them over the network. 
+ In contrast, HTTP/1.1 headers are sent as plaintext, leading to higher overhead, 
+ especially for requests with many headers.
+
+Server Push: HTTP/2 supports server push, a feature that allows servers to proactively send 
+ resources to the client's cache before the client requests them. 
+ This can improve page load times by reducing the need for 
+ additional round trips between the client and server.
+
+Binary Protocol: HTTP/2 is a binary protocol, whereas HTTP/1.1 is text-based. 
+ The binary format of HTTP/2 enables more efficient parsing and processing by both clients and servers.
+
+Stream Prioritization: HTTP/2 introduces stream prioritization, 
+ allowing clients to specify the priority of individual resources.
+ This helps optimize the delivery of critical resources and improve overall page load performance.
+
+Flow Control: HTTP/2 includes flow control mechanisms at both the connection and stream levels,
+ preventing a sender from overwhelming a receiver with data.
+ This helps ensure a smoother and more reliable data transfer process.
+
+Overall, HTTP/2 aims to address the limitations and inefficiencies of HTTP/1.1,
+particularly in the context of modern web applications with increasing demands
+for performance and responsiveness.
