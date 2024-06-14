@@ -8,3 +8,14 @@ Properties and Methods:
    - Properties are key-value pairs where the key is always a string (or symbol) and the value can be any data type.
    - Methods are functions associated with an object, allowing for behaviour encapsulation.
 
+Object Prototype:
+   - Each object in JavaScript has an internal reference to another object called its prototype.
+   - If a property or method is not found in the object itself, JavaScript looks for it in the prototype object.
+   - This process continues recursively along the prototype chain until the property or method is found or until the end of the chain (null).
+
+Object Creation:
+   - Objects can be created using constructor functions, object literals, or ES6 classes.
+   - Constructor functions are functions used to initialise objects with specific properties and methods.
+   - Object literals provide a concise syntax for creating objects directly without using constructor functions.
+   - ES6 classes offer a more intuitive and class-based approach to object creation and inheritance.
+
