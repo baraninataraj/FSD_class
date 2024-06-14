@@ -23,3 +23,38 @@ Document Object:
 
    -Document-Level Events: 
      Events such as `DOMContentLoaded` and `load` are associated with the `document` object and are triggered when the HTML document is fully loaded or parsed.
+
+Window Object:
+   -Represents Browser Window:
+     The `window` object represents the browser window or tab containing the HTML document.
+     It serves as the global object in client-side JavaScript and provides access to various browser-related functionalities.
+
+   -Browser Interaction:
+     Through the `window` object, developers can interact with the browser environment, 
+     such as navigating to URLs (`window.location`), opening new browser windows or tabs (`window.open()`), 
+     and displaying alerts or prompts (`window.alert()`, `window.prompt()`).
+
+   -Size and Position: 
+     Properties like `innerWidth`, `innerHeight`, `pageXOffset`, and `pageYOffset` provide information about 
+     the size and position of the browser viewport. These properties are particularly useful for responsive web design and handling scrolling behavior.
+
+   -Timers and Events: 
+     Methods like `setTimeout()` and `setInterval()` are used to execute code after a specified delay or at regular intervals.
+     Event-related methods like `addEventListener()` and `removeEventListener()` enable developers to manage browser events such as clicks,
+     mouse movements, and keyboard input.
+
+Key Differences:
+    -Scope**: 
+     The `document` object represents the HTML document loaded in the browser window, focusing on manipulating its structure and content.
+     In contrast, the `window` object represents the browser window or tab and provides access to browser-related functionalities and properties.
+    
+    -Responsibilities:
+     The `document` object manages the HTML document's structure and content, while the `window` object manages the browser environment and global variables.
+
+    -Hierarchy:
+     The `document` object is a property of the `window` object, representing the HTML document within the browser window or tab. 
+     However, the `window` object encapsulates the entire browser environment and serves as the global object in client-side JavaScript.
+
+Understanding the distinctions between the `document` object and the `window` object empowers developers to leverage their respective functionalities effectively.
+While the `document` object facilitates interaction with the HTML structure, the `window` object provides access to browser-related functionalities,
+enabling developers to create dynamic and interactive web applications.
