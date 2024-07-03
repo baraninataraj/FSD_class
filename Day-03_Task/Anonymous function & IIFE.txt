@@ -88,3 +88,6 @@ let arr = ["barani", 29, "barani", 29, "Male", 6];
 
 Output:
 ['barani', 29, 'Male', 6]
+
+//Rotate an array by k times
+

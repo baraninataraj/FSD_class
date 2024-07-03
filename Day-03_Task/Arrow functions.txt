@@ -1,0 +1,22 @@
+//Print odd numbers in an array
+
+let numbers = [1, 2, 3, 8, 13, 16, 24, 27, 33];
+let result = oddNumbers(numbers);
+let oddNumbers = (array) => {
+                   for(var i = 0 ; i< array.length ; i++){
+                        if(array[i]%2!=0){
+                           console.log(array[i])
+                        } 
+                   }
+                        }
+console.log(result);
+
+Output:
+1
+3
+13
+27
+33
+
+//Convert all the strings to title caps in a string array
+
