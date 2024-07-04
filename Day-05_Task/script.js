@@ -60,5 +60,47 @@ movie {
 //Circle - Class
 //Convert the UML diagram to Typescript class. - use number for double
 
+//Write a “person” class to hold all the details.
+class employee{
+    constructor(name, age, location, gender)
+    {
+        this.name = name;
+        this.age = age;
+        this.location = location;
+        this.gender = gender;
+    }
+    getPerson() {
+         return {name: this.name, age: this.age,location: this.location, gender: this.gender};
+    }
+}
+const person1 = new employee("Aravind", 30, "Chennai", "Male");
+const person2 = new employee("Barani", 29, "Chennai", "Male");
+
+console.log(person1.getPerson());
+console.log(person2.getPerson());
+
+Output:
+{ name: 'Aravind', age: 30, location: 'Chennai', gender: 'Male' }
+{ name: 'Barani', age: 29, location: 'Chennai', gender: 'Male' }
 
 
+//write a class to calculate the Uber price
+class uber{
+    constructor(place,distance,price)
+    {
+       this.place = place;
+       this.distance = distance;
+       this.price = price;
+       
+    }
+    getPrice(){
+         return this.distance * this.price;
+    }
+}
+const totalAmount = new uber("cuddaloreToChennai", 205, 14);
+
+
+console.log(totalAmount.getPrice());
+
+Output:
+2870
