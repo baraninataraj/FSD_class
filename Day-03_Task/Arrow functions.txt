@@ -1,7 +1,6 @@
 //Print odd numbers in an array
 
 let numbers = [1, 2, 3, 8, 13, 16, 24, 27, 33];
-let result = oddNumbers(numbers);
 let oddNumbers = (array) => {
                    for(var i = 0 ; i< array.length ; i++){
                         if(array[i]%2!=0){
@@ -9,7 +8,7 @@ let oddNumbers = (array) => {
                         } 
                    }
                         }
-console.log(result);
+ oddNumbers(numbers);
 
 Output:
 1
@@ -20,3 +19,79 @@ Output:
 
 //Convert all the strings to title caps in a string array
 
+let input = ["name", "gender", "age"];
+let data = (arr) => {
+    for (var i = 0; i < arr.length; i++) {
+        arr[i] = arr[i].toLowerCase().charAt(0).toUpperCase() + arr[i].slice(1);
+    }
+    console.log(arr.join(','));
+    }
+data(input)
+
+Output:
+Name,Gender,Age
+
+
+//Sum of all numbers in an array
+
+let input = [3,1,0,7,1,9,9,4];
+
+let sum = (number) => {
+             var sum = 0;
+                  for(var i = 0 ; i< number.length ; i++){
+                     sum = sum + number[i];
+                   }
+                   console.log(sum);
+                   return sum;
+             }
+sum(input)
+
+Output:
+34
+
+
+//Return all the prime numbers in an array
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 31, 33, 37];
+
+let primeNumber = (numArray) => {
+    numArray = numArray.filter((number) => {
+    
+        for (var i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) {
+                return false; 
+            }
+        }
+        return number > 1; 
+    });
+
+    console.log(numArray); 
+}
+primeNumber(numbers); 
+
+Output:
+[2,3,5,7,31,37]
+
+//Return all the palindromes in an array
+let input = ["civic", "rotor", "kayak", "racecar", "level", "motor", "bike"];
+
+let isPalindrome = (arr) => {
+    function isPalindrome(str) {
+        let cleanStr = str.toLowerCase();
+        return cleanStr === cleanStr.split('').reverse().join('');
+    };
+
+    arr.forEach(item => {
+        if (isPalindrome(item)) {
+            console.log(item);
+        }
+    });
+}
+isPalindrome(input)
+
+Output:
+civic
+rotor
+kayak
+racecar
+level
