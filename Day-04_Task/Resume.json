@@ -1,0 +1,12 @@
+{
+    "name": "Baranidharan",
+    "email": "baraninataraj52@gmail.com",
+    "age": 29,
+    "address": {
+      "addressLine1": "chennai",
+      "addressLine2": "Tamilnadu"
+    },
+    "languages": ["Tamil", "English"],
+    "qualification": "B.E EEE"
+  }
+  
